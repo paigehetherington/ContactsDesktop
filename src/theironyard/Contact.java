@@ -1,3 +1,5 @@
+package theironyard;
+
 /**
  * Created by vajrayogini on 2/16/16.
  */
@@ -14,9 +16,6 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return String.format("%s %s %s", name, phone, email);
     }
 }
